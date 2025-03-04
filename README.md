@@ -21,6 +21,19 @@ O **Festivite** é um projeto de formulário interativo desenvolvido em **HTML**
 
 ---
 
+## Estrutura do Projeto
+
+- **index.html**  
+  Arquivo principal que contém a marcação do formulário do convite.
+
+- **Pasta `assets/`**  
+  Ícones, imagens e logomarca da aplicação (por exemplo, `logo.svg`, ícones de upload, imagens de temas etc.).
+
+- **Pasta `styles/`**  
+  Arquivos CSS organizados em layout, formulários, global e rodapé.
+
+  ---
+
 ![image](https://github.com/user-attachments/assets/efd0a0d0-e275-4ec1-98ce-9d3a7a591a0b)
 
 ---
