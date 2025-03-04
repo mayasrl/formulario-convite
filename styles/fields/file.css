@@ -1,0 +1,20 @@
+.file-wrapper {
+  display: inline-flex;
+  align-items: center;
+}
+
+.file-wrapper input[type="file"] {
+  display: none;
+}
+.file-wrapper .file-name {
+  /* Exibe a frase do HTML apenas uma vez */
+  font: 400 1rem/normal var(--font-family-3);
+  color: var(--input-placeholder);
+  margin-left: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.file-wrapper label:hover {
+  transition: 0.2s ease-in-out;
+  background-color: var(--shape-hover);
+}

@@ -1,0 +1,136 @@
+.about-event .radio-wrapper {
+  display: flex;
+  height: 3rem;
+  border-radius: 0.5rem;
+  background-color: #1c1f21;
+  border: 1px solid #363b40;
+
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.about-event .radio-wrapper input {
+  display: none;
+}
+
+.about-event .radio-wrapper label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0 1rem;          
+  height: 2.5rem;
+  margin-top: 0.2rem;
+  border-radius: 0.5rem;
+}
+
+.about-event .radio-inner input:checked + label {
+  background-color: #363b40;
+  font: 600 0.875rem/normal var(--font-family-3);
+}
+
+.about-event .radio-inner input:checked + label svg path {
+  fill: var(--brand-light);
+}
+
+.flex-colors .radio-wrapper {
+  width: 100%;
+  display: inline-flex;
+}
+
+.flex-colors .radio-inner input {
+  display: inline-flex;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  transition: 0.2s ease-in-out;
+  border: 0.4rem solid #2d3136;
+}
+
+.flex-colors .radio-inner input:hover {
+  transition: 0.2s ease-in-out;
+  border: 0.4rem solid var(--shape-hover);
+}
+
+.flex-colors .radio-inner input:checked {
+  border: 0.4rem solid var(--shape-hover);
+  outline: 2px solid var(--brand-light);
+}
+
+.flex-colors .radio-inner input#blue {
+  background-color: var(--brand-light);
+}
+.flex-colors .radio-inner input#navy {
+  background-color: var(--navy);
+}
+.flex-colors .radio-inner input#purple {
+  background-color: var(--purple);
+}
+.flex-colors .radio-inner input#fuschia {
+  background-color: var(--fuschia);
+}
+.flex-colors .radio-inner input#pink {
+  background-color: var(--pink);
+}
+.flex-colors .radio-inner input#red {
+  background-color: var(--danger);
+}
+.flex-colors .radio-inner input#orange {
+  background-color: var(--orange);
+}
+.flex-colors .radio-inner input#yellow {
+  background-color: var(--yellow);
+}
+.flex-colors .radio-inner input#lime {
+  background-color: var(--lime);
+}
+.flex-colors .radio-inner input#green {
+  background-color: var(--green);
+}
+.flex-colors .radio-inner input#cyan {
+  background-color: var(--cyan);
+}
+
+.flex-theme .radio-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  gap: 2rem;
+}
+
+.flex-theme .radio-inner {
+  display: flex;
+  flex-direction: column;
+  transition: 0.2s ease-in-out;
+  border-radius: 0.5rem;
+  width: 8.3rem;
+  height: auto;
+  justify-content: center;
+  background-color: #2d3136;
+  text-align: center;
+  position: relative;
+}
+
+.flex-theme .radio-inner img {
+  display: block;
+  margin: 0 auto;
+  padding: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.flex-theme .radio-inner input {
+  position: absolute;
+  transition: 0.2s ease-in-out;
+  border-radius: 0.5rem;
+  width: 8.3rem;
+  height: 6.43rem;
+  outline: 2px solid var(--input-stroke);
+}
+
+.flex-theme .radio-inner input:checked {
+  transition: 0.2s ease-in-out;
+  outline: 2px solid var(--brand-light);
+}
+
+.flex-theme .radio-inner:hover {
+  background-color: var(--shape-hover);
+}

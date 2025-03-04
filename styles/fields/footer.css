@@ -1,0 +1,18 @@
+footer {
+  height: 3rem;
+}
+
+footer input {
+  display: none;
+}
+
+footer .input-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer label:hover {
+  transition: 0.2s ease-in-out;
+  background-color: var(--brand-mid);
+}
+

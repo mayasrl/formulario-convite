@@ -1,0 +1,40 @@
+label {
+  font: 400 0.875rem/normal var(--font-family-3);
+  color: var(--text-body);
+  display: block;
+  margin-bottom: 12px;
+}
+
+.needs-validation input:invalid {
+  border: none; 
+}
+
+.needs-validation.was-validated input:invalid {
+  border: 0.125rem solid var(--danger);
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+textarea:focus {
+  outline: 1px solid var(--brand-light);
+}
+
+input[type="radio"] {
+  appearance: none;
+}
+
+input + small {
+  font: var(--text-sm);
+  display: inline-block;
+  margin-top: 0.25rem;
+}
+
+input[required] + .error {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font: 400 0.75rem/normal var(--font-family-3);
+  color: var(--danger);
+  margin-top: 0.5rem;
+}
+

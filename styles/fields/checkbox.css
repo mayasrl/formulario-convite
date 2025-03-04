@@ -1,0 +1,89 @@
+.switch {
+  display: inline-flex;
+  position: relative;
+}
+
+.switch input {
+  appearance: none;
+  width: 4rem;
+  height: 2rem;
+  border-radius: 999px;
+}
+
+.switch .slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 4rem;
+  height: 2rem;
+  border-radius: 999px;
+  background-color: var(--input-base);
+  border: 1px solid var(--input-stroke);
+  transition: 0.4s;
+}
+
+.switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 1.5rem;
+  width: 1.5rem;
+  left: 0.25rem;
+  bottom: 0.2rem;
+  border-radius: 999px;
+  background-color: var(--input-stroke);
+  transition: 0.4s;
+}
+
+.switch input:checked + .slider {
+  background-color: var(--brand-light);
+}
+
+.switch input:checked + .slider::before {
+  transform: translateX(1.9rem);
+  background-color: var(--text-heading);
+}
+
+.switch label {
+  margin-top: 0.4rem;
+  margin-left: 0.75rem;
+}
+
+.switch label[for="style"]::before {
+  content: "Escuro";
+}
+
+.switch input:checked ~ label[for="style"]::before {
+  content: "Claro";
+}
+
+.terms .checkbox-inner input {
+  display: none;
+}
+
+.terms .checkbox-inner input + label::before {
+  content: "";
+  vertical-align: middle;
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid var(--input-stroke);
+  border-radius: 0.25rem;
+  background-color: var(--input-base);
+  display: inline-block;
+  margin-right: 0.75rem;
+  transition: 0.2s ease-in-out;
+}
+
+.terms .checkbox-inner input:checked + label::before {
+  transition: 0.2s ease-in-out;
+  border: 1px solid var(--brand-light);
+  background-image: url(../../assets/icons/check.svg);
+  background-size: contain;
+}
+
+.terms .checkbox-inner span {
+  color: var(--brand-light);
+  font-weight: 600;
+  text-decoration: underline;
+}

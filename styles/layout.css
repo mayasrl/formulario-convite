@@ -1,0 +1,60 @@
+#app {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  height: 100vh;
+  overflow: hidden;
+  gap: 1.25rem;
+}
+
+main {
+  overflow: auto;
+}
+
+main .main-container {
+  background-color: var(--shape-body);
+  border-radius: 0.75rem;
+  max-width: 50rem;
+  width: 100%;
+  padding: 2rem;
+  margin-top: 1.25rem;
+}
+
+main h1 {
+  margin-bottom: 2.5rem;
+}
+
+aside header {
+  margin: 2rem;
+}
+
+aside header img {
+  width: 2.81rem;
+  height: 2.81rem;
+  margin-bottom: 1rem;
+}
+
+aside .aside-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+aside .bg-image {
+  background-image: url(../assets/images/Background.png);
+  border-radius: 0.75rem;
+  width: 25rem;
+  height: 97vh;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  margin: 1.25rem 0;
+}
+
+aside h1 {
+  font: var(--text-logo);
+  color: var(--pink);
+}
+
+aside p {
+  margin-top: 0.25rem;
+  font: 300 1rem/1 var(--font-family-3);
+}
