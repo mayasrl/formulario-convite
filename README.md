@@ -1,4 +1,4 @@
-Formulário de Convite
+# Formulário de Convite
 
 O **Festivite** é um projeto de formulário interativo desenvolvido em **HTML**, **CSS** e **JavaScript** para a criação de convites digitais de eventos. Ele permite personalizar cores, temas, datas e detalhes de contato, além de oferecer uma experiência responsiva e acessível.
 
